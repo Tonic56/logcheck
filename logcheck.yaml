@@ -1,0 +1,21 @@
+# logcheck.yaml — configuration for the logcheck linter
+#
+# All rules are enabled by default. Add a rule name to `disabled` to turn it off.
+#
+# disabled:
+#   - no-sensitive-data
+#   - english-only
+
+# extra_keywords extends the built-in sensitive-data keyword list.
+# extra_keywords:
+#   - internal_secret
+#   - priv_cert
+
+# allowed_chars lists ASCII characters that no-special-chars should not flag.
+# Useful when your log messages legitimately contain certain punctuation.
+# allowed_chars: ":"
+
+# custom_patterns is a list of Go regular expressions.
+# Matches in the message text or raw expression trigger a sensitive-data finding.
+# custom_patterns:
+#   - "sk_live_[a-zA-Z0-9]+"

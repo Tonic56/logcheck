@@ -1,0 +1,18 @@
+run:
+  timeout: 3m
+
+linters:
+  enable:
+    - govet
+    - errcheck
+    - staticcheck
+    - unused
+    - gofmt
+    - gosimple
+
+linters-settings:
+  custom:
+    logcheck:
+      path: logcheck.so
+      description: Enforces log message style rules
+      original-url: github.com/Tonic56/logcheck
